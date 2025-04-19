@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
@@ -17,25 +17,25 @@ export default defineConfig({
         display: 'standalone',
         icons: [
           {
-            src: 'pwa-64x64.png',
+            src: 'mask-icon.svg',
             sizes: '64x64',
-            type: 'image/png'
+            type: 'image/svg'
           },
           {
-            src: 'pwa-192x192.png',
+            src: 'mask-icon.svg',
             sizes: '192x192',
-            type: 'image/png'
+            type: 'image/svg'
           },
           {
-            src: 'pwa-512x512.png',
+            src: 'mask-icon.svg',
             sizes: '512x512',
-            type: 'image/png',
+            type: 'image/svg',
             purpose: 'any'
           },
           {
-            src: 'maskable-icon-512x512.png',
+            src: 'mask-icon.svg',
             sizes: '512x512',
-            type: 'image/png',
+            type: 'image/svg',
             purpose: 'maskable'
           }
         ]
